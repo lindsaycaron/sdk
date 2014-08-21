@@ -1,6 +1,6 @@
 #SDK - Xamarin#
 
-Integrating Youbetme into your own mobile app is easy with the Youbetme SDK. To do so with Xamarin you can use either Xamarin Studio or Visual Studio (http://xamarin.com/platform). The Youbetme SDK consists of four C# PCLs (portable class libraries) targeting PCL profile 7 (.NET Framework 4.5, Windows 8, Windows Store, Xamarin.Android and Xamarin.iOS). Each library contains a logically related subset of types that you’ll need to interact with the Youbetme backend:
+Integrating Youbetme into your own mobile app is easy with the Youbetme SDK. To do so with Xamarin you can use either Xamarin Studio or Visual Studio [http://xamarin.com/platform](http://xamarin.com/platform). The Youbetme SDK consists of four C# PCLs (portable class libraries) targeting PCL profile 7 (.NET Framework 4.5, Windows 8, Windows Store, Xamarin.Android and Xamarin.iOS). Each library contains a logically related subset of types that you’ll need to interact with the Youbetme backend:
 
 - **Youbetme.DataObjects**
 Contains all domain objects like customers, bets, posts, sports teams and events, friends, followers, news feed stories, reminders and more. 
@@ -9,7 +9,7 @@ Contains all domain objects like customers, bets, posts, sports teams and events
 Contains a few validation utility types that you will need to ensure the data you submit to the Youbetme backend is valid. The content you can create include customers, bets and posts. For each one of these types a validator is available.
 
 - **Youbetme.Communication** 
-Contains the generic Response<T> type which carries data and useful information when communicating with the backend (status report, important messages, and the data result). 
+Contains the generic `Response<T>` type which carries data and useful information when communicating with the backend (status report, important messages, and the data result). 
 
 - **Youbetme.Proxies**
 These are the types that will submit content and queries for you to the Youbetme backend API. They take care of data serialization and deserialization and provide both blocking and async calls.
@@ -95,23 +95,23 @@ Customer = response.Result;
 
 ##Retrieving a Customer’s Friends, Followers and Followees##
 
-To learn how to retrieve customer’s friends, followers or followees (i.e. subscriptions, those that the customer is following) refer to the GetFriends, GetFollowers and GetFollowees methods of the App type in the FormsSample project. 
+To learn how to retrieve customer’s friends, followers or followees (i.e. subscriptions, those that the customer is following) refer to the `GetFriends`, `GetFollowers` and `GetFollowees` methods of the App type in the FormsSample project. 
 
 
 ##Searching for Customers##
 
-To learn how to specify criteria and perform searches in the Youbetme customers database refer to the PerformSearch method of the App type in the FormsSample project.
+To learn how to specify criteria and perform searches in the Youbetme customers database refer to the `PerformSearch` method of the App type in the FormsSample project.
 
 
 ##Bets##
 
 - **New Bets**: Refer to the CreateBet method of the App type in the portable FormsSample project.
 
-- **Accepting Bets**: The newly created bet is in Pending state and it will remain so until every bet member accepts the bet. Refer to the AcceptBetAsync method of the App type in the FormsSample project.
+- **Accepting Bets**: The newly created bet is in Pending state and it will remain so until every bet member accepts the bet. Refer to the `AcceptBetAsync` method of the App type in the FormsSample project.
 
-- **Closing Bets**: Once a bet has been accepted by all members it becomes Active. Every bet member can close the bet by specifying the winning team and whether the bet has been paid. Refer to the CloseBetAsync method of the App type in the FormsSample project. If a bet is to be paid it will enter the PayUp state; otherwise it will become either Paid or Welched. 
+- **Closing Bets**: Once a bet has been accepted by all members it becomes Active. Every bet member can close the bet by specifying the winning team and whether the bet has been paid. Refer to the `CloseBetAsync` method of the App type in the FormsSample project. If a bet is to be paid it will enter the PayUp state; otherwise it will become either Paid or Welched. 
 
-- **Retrieving Bets**: Refer to the GetPendingBetsAsync, GetActiveBetsAsync, GetPayUpBetsAsync and GetClosedBetsAsync of the App type from the FormsSample project. 
+- **Retrieving Bets**: Refer to the `GetPendingBetsAsync`, `GetActiveBetsAsync`, `GetPayUpBetsAsync` and `GetClosedBetsAsync` of the App type from the FormsSample project. 
 
 - **Posting Text**: Youbetme customers are able to post comments below bets. To comment on a bet, use the lines below:
 
@@ -150,9 +150,9 @@ if (!result.IsValid)
 PostProxy.CreateAsync (Token, post, post.ImageData, null);
 ```
 
-- **Storing Custom Data**: To see how to store custom bet, user and post data refer to the CreateCustomerWithContextData, CreateBetWithContextData and CreatePostWithContextData methods of the App type in the FormsSample project. 
+- **Storing Custom Data**: To see how to store custom bet, user and post data refer to the `CreateCustomerWithContextData`, `CreateBetWithContextData` and `CreatePostWithContextData` methods of the App type in the FormsSample project. 
 
 ##News Feed##
 
-To see how to get the customer’s news feed stories refers to the GetNewsFeedAsync method of the App type in the FormsSample project.
+To see how to get the customer’s news feed stories refers to the `GetNewsFeedAsync` method of the App type in the FormsSample project.
 
