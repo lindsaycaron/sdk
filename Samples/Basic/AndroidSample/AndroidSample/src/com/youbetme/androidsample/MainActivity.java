@@ -447,7 +447,6 @@ public class MainActivity extends ActionBarActivity {
 	    		JSONObject betMakerJSON = new JSONObject();
 	    		betMakerJSON.put("CustomerId", ContextCustomer.get("Id"));
 	    		betMakerJSON.put("BetStatus", BetStatus.Active);
-	    		//members.add(betMakerJSON);
 	    		members.put(betMakerJSON);
 	    		
 	    		// Optionally add a teammate
@@ -916,6 +915,35 @@ public class MainActivity extends ActionBarActivity {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 			}	
+	    }
+	    
+	    private void GetNewsFeed()
+	    {
+	    	try {	
+	    		GetNewsFeedTask task = new GetNewsFeedTask(Token); 
+				
+	    		JSONObject filterJSON = new JSONObject();
+	    		filterJSON.put("CustomerId", ContextCustomer.get("Id"));
+	    		filterJSON.put("PageNumber", 0);
+	    		filterJSON.put("PageSize", 50);
+	    		
+	    		String[] response = task.execute(filterJSON.toString()).get();
+					
+				JSONObject responseJSON = new JSONObject(response[0]);
+					
+				Status status = Status.values()[(Integer)responseJSON.opt("Status")];
+				
+				if(status != Status.Success){
+					// TODO: Display responseJSON.getString("Message")
+					return;
+				}
+		
+				JSONArray newsStoriesJSON = responseJSON.getJSONArray("Result");
+			} 
+	    	catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+			}
 	    }
 	    
 	    private void SetDevice(){

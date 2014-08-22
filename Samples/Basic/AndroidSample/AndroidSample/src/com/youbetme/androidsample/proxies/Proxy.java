@@ -221,6 +221,16 @@ public class Proxy {
 		return GetResponse(OPERATION_NAME, request);
 	}
 	
+	public String GetNewsFeed(String token, String filter){
+		String OPERATION_NAME = "GetFeed";
+		
+		SoapObject request = new SoapObject(SERVICE_NAMESPACE, OPERATION_NAME);
+		request.addProperty("token", token);
+		request.addProperty("request", filter);
+
+		return GetResponse(OPERATION_NAME, request);
+	}
+	
 	public String SetDevice(String registrationId, String customerId){
 		String OPERATION_NAME = "SetDevice";
 		
