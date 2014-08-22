@@ -9,10 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsSample.Android", "Andr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{C6255934-DAC7-4772-8FF2-3F0DB964E89A}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\SDK\Youbetme.Communication.dll = ..\..\SDK\Youbetme.Communication.dll
-		..\..\SDK\Youbetme.DataObjects.dll = ..\..\SDK\Youbetme.DataObjects.dll
-		..\..\SDK\Youbetme.Proxies.dll = ..\..\SDK\Youbetme.Proxies.dll
-		..\..\SDK\Youbetme.Validation.dll = ..\..\SDK\Youbetme.Validation.dll
+		..\..\..\SDK\Youbetme.Communication.dll = ..\..\..\SDK\Youbetme.Communication.dll
+		..\..\..\SDK\Youbetme.DataObjects.dll = ..\..\..\SDK\Youbetme.DataObjects.dll
+		..\..\..\SDK\Youbetme.Proxies.dll = ..\..\..\SDK\Youbetme.Proxies.dll
+		..\..\..\SDK\Youbetme.Validation.dll = ..\..\..\SDK\Youbetme.Validation.dll
 	EndProjectSection
 EndProject
 Global

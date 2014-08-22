@@ -39,18 +39,6 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.2.6243\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
   <ItemGroup>
-    <Reference Include="Youbetme.Communication">
-      <HintPath>..\..\..\SDK\Youbetme.Communication.dll</HintPath>
-    </Reference>
-    <Reference Include="Youbetme.DataObjects">
-      <HintPath>..\..\..\SDK\Youbetme.DataObjects.dll</HintPath>
-    </Reference>
-    <Reference Include="Youbetme.Proxies">
-      <HintPath>..\..\..\SDK\Youbetme.Proxies.dll</HintPath>
-    </Reference>
-    <Reference Include="Youbetme.Validation">
-      <HintPath>..\..\..\SDK\Youbetme.Validation.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -62,6 +50,18 @@
     </Reference>
     <Reference Include="Parse.Api">
       <HintPath>..\packages\Parse.Api.2.0.0.0\lib\portable-win+net40+sl40+wp71\Parse.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Youbetme.Communication">
+      <HintPath>..\..\..\..\SDK\Youbetme.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="Youbetme.DataObjects">
+      <HintPath>..\..\..\..\SDK\Youbetme.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Youbetme.Proxies">
+      <HintPath>..\..\..\..\SDK\Youbetme.Proxies.dll</HintPath>
+    </Reference>
+    <Reference Include="Youbetme.Validation">
+      <HintPath>..\..\..\..\SDK\Youbetme.Validation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
