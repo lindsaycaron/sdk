@@ -44,16 +44,16 @@
       <HintPath>..\Libs\Newtonsoft.Json.6.0.4\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Youbetme.Communication">
-      <HintPath>..\..\SDK\Youbetme.Communication.dll</HintPath>
+      <HintPath>..\..\..\SDK\Youbetme.Communication.dll</HintPath>
     </Reference>
     <Reference Include="Youbetme.DataObjects">
-      <HintPath>..\..\SDK\Youbetme.DataObjects.dll</HintPath>
+      <HintPath>..\..\..\SDK\Youbetme.DataObjects.dll</HintPath>
     </Reference>
     <Reference Include="Youbetme.Proxies">
-      <HintPath>..\..\SDK\Youbetme.Proxies.dll</HintPath>
+      <HintPath>..\..\..\SDK\Youbetme.Proxies.dll</HintPath>
     </Reference>
     <Reference Include="Youbetme.Validation">
-      <HintPath>..\..\SDK\Youbetme.Validation.dll</HintPath>
+      <HintPath>..\..\..\SDK\Youbetme.Validation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -77,7 +77,7 @@
     <Compile Include="SavedData.cs" />
     <Compile Include="YouBetMe\Helpers\FriendsHelper.cs" />
     <Compile Include="Toast.cs" />
-    <Compile Include="YouBetMe\UIOverlay.cs" />
+    <Compile Include="UIOverlay.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="..\Content\pipe.png">

@@ -48,6 +48,21 @@
     <Reference Include="MonoGame.Framework">
       <HintPath>..\Libs\Android\MonoGame.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="Youbetme.Communication">
+      <HintPath>..\..\..\SDK\Youbetme.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="Youbetme.DataObjects">
+      <HintPath>..\..\..\SDK\Youbetme.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Youbetme.Proxies">
+      <HintPath>..\..\..\SDK\Youbetme.Proxies.dll</HintPath>
+    </Reference>
+    <Reference Include="Youbetme.Validation">
+      <HintPath>..\..\..\SDK\Youbetme.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -58,11 +73,21 @@
     <Compile Include="Wall.cs" />
     <Compile Include="Number.cs" />
     <Compile Include="SavedData.cs" />
+    <Compile Include="YouBetMe\Extensions\TaskExtensions.cs" />
+    <Compile Include="YouBetMe\Helpers\BetsHelper.cs" />
+    <Compile Include="YouBetMe\Helpers\FriendsHelper.cs" />
+    <Compile Include="YouBetMe\Helpers\LoginHelper.cs" />
+    <Compile Include="Toast.cs" />
+    <Compile Include="UIOverlay.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <None Include="Resources\Default-568h%402x.png">
       <Visible>False</Visible>
     </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="YouBetMe\" />
   </ItemGroup>
 </Project>
